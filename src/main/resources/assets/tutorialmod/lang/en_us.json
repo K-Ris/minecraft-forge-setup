@@ -1,6 +1,12 @@
 {
 	"item.tutorialmod.tutorial_item": "Tutorial Item",
 	
+	"item.tutorialmod.steel_axe": "Steel Axe",
+	"item.tutorialmod.steel_hoe": "Steel Hoe",
+	"item.tutorialmod.steel_pickaxe": "Steel Pickaxe",
+	"item.tutorialmod.steel_shovel": "Steel Shovel",
+	"item.tutorialmod.steel_sword": "Steel Sword",
+	
 	"block.tutorialmod.tutorial_block": "Tutorial Block",
 	
 	"itemGroup.tutorial": "Tutorial Item Group"

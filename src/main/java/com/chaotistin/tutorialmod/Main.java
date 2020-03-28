@@ -5,13 +5,19 @@ import org.apache.logging.log4j.Logger;
 
 import com.chaotistin.tutorialmod.lists.BlockList;
 import com.chaotistin.tutorialmod.lists.ItemList;
+import com.chaotistin.tutorialmod.lists.ToolMaterialList;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.AxeItem;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.ShovelItem;
+import net.minecraft.item.SwordItem;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -60,6 +66,11 @@ public class Main
 			(
 					ItemList.tutorial_item = new Item(new Item.Properties().group(tutorial)).setRegistryName(location("tutorial_item")),
 					
+					ItemList.steel_axe = new AxeItem(ToolMaterialList.steel, -1.0f, 6.0f, new Item.Properties().group(tutorial)).setRegistryName(location("steel_axe")),
+					ItemList.steel_pickaxe = new PickaxeItem(ToolMaterialList.steel, -1, 6.0f, new Item.Properties().group(tutorial)).setRegistryName(location("steel_pickaxe")),
+					ItemList.steel_hoe = new HoeItem(ToolMaterialList.steel, 6.0f, new Item.Properties().group(tutorial)).setRegistryName(location("steel_hoe")),
+					ItemList.steel_axe = new ShovelItem(ToolMaterialList.steel, -1.0f, 6.0f, new Item.Properties().group(tutorial)).setRegistryName(location("steel_shovel")),
+					ItemList.steel_axe = new SwordItem(ToolMaterialList.steel, 0, 6.0f, new Item.Properties().group(tutorial)).setRegistryName(location("steel_sword")),
 					
 					ItemList.tutorial_block = new BlockItem(BlockList.tutorial_block, new Item.Properties().group(tutorial)).setRegistryName(BlockList.tutorial_block.getRegistryName())
 			);
