@@ -66,6 +66,8 @@ public class Main
 			(
 					ItemList.tutorial_item = new Item(new Item.Properties().group(tutorial)).setRegistryName(location("tutorial_item")),
 					
+					ItemList.tutorial_item = new Item(new Item.Properties().group(tutorial)).setRegistryName(location("steel_ingot")),
+					
 					ItemList.steel_axe = new AxeItem(ToolMaterialList.steel, -1.0f, 6.0f, new Item.Properties().group(tutorial)).setRegistryName(location("steel_axe")),
 					ItemList.steel_pickaxe = new PickaxeItem(ToolMaterialList.steel, -1, 6.0f, new Item.Properties().group(tutorial)).setRegistryName(location("steel_pickaxe")),
 					ItemList.steel_hoe = new HoeItem(ToolMaterialList.steel, 6.0f, new Item.Properties().group(tutorial)).setRegistryName(location("steel_hoe")),
