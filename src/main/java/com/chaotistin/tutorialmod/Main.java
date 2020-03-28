@@ -3,6 +3,7 @@ package com.chaotistin.tutorialmod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.chaotistin.tutorialmod.lists.ArmorMaterialList;
 import com.chaotistin.tutorialmod.lists.BlockList;
 import com.chaotistin.tutorialmod.lists.ItemList;
 import com.chaotistin.tutorialmod.lists.ToolMaterialList;
@@ -10,6 +11,8 @@ import com.chaotistin.tutorialmod.lists.ToolMaterialList;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.HoeItem;
@@ -73,6 +76,11 @@ public class Main
 					ItemList.steel_hoe = new HoeItem(ToolMaterialList.steel, 6.0f, new Item.Properties().group(tutorial)).setRegistryName(location("steel_hoe")),
 					ItemList.steel_axe = new ShovelItem(ToolMaterialList.steel, -1.0f, 6.0f, new Item.Properties().group(tutorial)).setRegistryName(location("steel_shovel")),
 					ItemList.steel_axe = new SwordItem(ToolMaterialList.steel, 0, 6.0f, new Item.Properties().group(tutorial)).setRegistryName(location("steel_sword")),
+					
+					ItemList.steel_helmet = new ArmorItem(ArmorMaterialList.tutorial, EquipmentSlotType.HEAD, new Item.Properties().group(tutorial)).setRegistryName(location("steel_helmet")),
+					ItemList.steel_chestplate = new ArmorItem(ArmorMaterialList.tutorial, EquipmentSlotType.CHEST, new Item.Properties().group(tutorial)).setRegistryName(location("steel_chestplate")),
+					ItemList.steel_leggings = new ArmorItem(ArmorMaterialList.tutorial, EquipmentSlotType.LEGS, new Item.Properties().group(tutorial)).setRegistryName(location("steel_leggings")),
+					ItemList.steel_boots = new ArmorItem(ArmorMaterialList.tutorial, EquipmentSlotType.FEET, new Item.Properties().group(tutorial)).setRegistryName(location("steel_boots")),
 					
 					ItemList.tutorial_block = new BlockItem(BlockList.tutorial_block, new Item.Properties().group(tutorial)).setRegistryName(BlockList.tutorial_block.getRegistryName())
 			);

@@ -15,5 +15,10 @@ public class ItemList
 	public static Item steel_shovel;
 	public static Item steel_sword;
 	
+	public static Item steel_helmet;
+	public static Item steel_chestplate;
+	public static Item steel_leggings;
+	public static Item steel_boots;
+	
 	public static Item tutorial_block;
 }

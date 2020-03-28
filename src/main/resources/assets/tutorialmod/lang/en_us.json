@@ -9,6 +9,11 @@
 	"item.tutorialmod.steel_shovel": "Steel Shovel",
 	"item.tutorialmod.steel_sword": "Steel Sword",
 	
+	"item.tutorialmod.steel_helmet": "Steel Helmet",
+	"item.tutorialmod.steel_chestplate": "Steel Chest",
+	"item.tutorialmod.steel_leggings": "Steel Leggings",
+	"item.tutorialmod.steeL_boots": "Steel Boots",
+	
 	"block.tutorialmod.tutorial_block": "Tutorial Block",
 	
 	"itemGroup.tutorial": "Tutorial Items"
