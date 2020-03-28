@@ -28,6 +28,8 @@ public class Main
 	public static final String modid = "tutorialmod";
 	private static final Logger logger = LogManager.getLogger(modid);
 	
+	public static final ItemGroup tutorial = new TutorialItemGroup();
+	
 	public Main()
 	{
 		instance = this;
@@ -56,10 +58,10 @@ public class Main
 		{
 			event.getRegistry().registerAll
 			(
-					ItemList.tutorial_item = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("tutorial_item")),
+					ItemList.tutorial_item = new Item(new Item.Properties().group(tutorial)).setRegistryName(location("tutorial_item")),
 					
 					
-					ItemList.tutorial_block = new BlockItem(BlockList.tutorial_block, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.tutorial_block.getRegistryName())
+					ItemList.tutorial_block = new BlockItem(BlockList.tutorial_block, new Item.Properties().group(tutorial)).setRegistryName(BlockList.tutorial_block.getRegistryName())
 			);
 			
 			logger.info("Items registered");

@@ -1,5 +1,7 @@
 {
 	"item.tutorialmod.tutorial_item": "Tutorial Item",
 	
-	"block.tutorialmod.tutorial_block": "Tutorial Block"
+	"block.tutorialmod.tutorial_block": "Tutorial Block",
+	
+	"itemGroup.tutorial": "Tutorial Item Group"
 }
