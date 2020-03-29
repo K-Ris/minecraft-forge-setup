@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern":
+	[
+		"I",
+		"I",
+		"S"
+	],
+	"key": 
+	{
+		"I": {"item": "tutorialmod:steel_ingot"},
+		"S": {"item": "minecraft:stick"}
+	},
+	"result": {"item": "tutorialmod:steel_sword"},
+	"count": 1
+}

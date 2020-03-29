@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": 
+	[
+		{"item": "tutorialmod:steel_sword"},
+		{"item": "tutorialmod:steel_axe"}
+	],
+	"result": {"item": "tutorialmod:steel_ingot"}
+}
